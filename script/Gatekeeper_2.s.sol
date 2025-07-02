@@ -15,8 +15,7 @@ contract Hacker {
 }
 
 contract GateKeeperScript is Script {
-    GatekeeperTwo code =
-        GatekeeperTwo(0x6EbA3AC2b3FF5164f0D84B3B9f5F254101F68822);
+    GatekeeperTwo code = GatekeeperTwo(0x6EbA3AC2b3FF5164f0D84B3B9f5F254101F68822);
 
     function run() external {
         vm.startBroadcast(vm.envUint("PRIV"));
