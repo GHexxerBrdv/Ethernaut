@@ -16,7 +16,7 @@ contract GatekeeperTwo {
         }
         require(x == 0);
         _;
-    } 
+    }
 
     modifier gateThree(bytes8 _gateKey) {
         require(uint64(bytes8(keccak256(abi.encodePacked(msg.sender)))) ^ uint64(_gateKey) == type(uint64).max);
