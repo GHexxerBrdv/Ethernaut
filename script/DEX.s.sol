@@ -39,7 +39,7 @@ contract Hacker {
 }
 
 contract DEXSolution is Script {
-    Dex public code = Dex(0xc580a76d340ebbf59ABc44e219F6F039EE1c220a);
+    Dex public code = Dex(0x42f39Df0C761D4CF8Ee3bfbc134390BBC61048cF);
 
     function run() external {
         IERC20 ETH = IERC20(code.token1());
